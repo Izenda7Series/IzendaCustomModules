@@ -23,7 +23,8 @@ namespace Izenda.CustomSQL
         {
             Logger.Info($"Overriding the query: {context.Query}");
 
-            context.Query = $"SET NOCOUNT ON; {context.Query} SET NOCOUNT OFF;";
+            //add your code here to modify the Izenda query as needed example below
+            //context.Query = $"SET NOCOUNT ON; {context.Query} SET NOCOUNT OFF;";
         }
     }
 }
